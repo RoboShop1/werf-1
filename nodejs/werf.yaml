@@ -18,7 +18,7 @@ shell:
     - npm install
 
 ---
-image: r-catalogue
+image: re-catalogue
 dockerfile: Dockerfile
 dependencies:
   - image: base-alpine
