@@ -6,11 +6,12 @@ image: base-alpine
 from: alpine
 final: false
 shell:
-  - mkdir /app
-  - apk update && apk add --no-cache curl unzip nodejs npm
-  - curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip
-  - cd /app && unzip /tmp/catalogue.zip
-  - npm install
+  install:
+    - mkdir /app
+    - apk update && apk add --no-cache curl unzip nodejs npm
+    - curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip
+    - cd /app && unzip /tmp/catalogue.zip
+    - npm install
 
 ---
 image: r-catalogue
