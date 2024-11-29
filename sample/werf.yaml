@@ -3,11 +3,10 @@ project: example
 configVersion: 1
 ---
 image: backend
-from: nginx
+from: alpine
 git:
-  - add: /sample
-    to: /app
+  - add: ./index.html
+    to: /app/index.html
 shell:
-  install:
-    - cd /app
-    - go build -o /app/bin/server
+  beforeInstall:
+    - apk add git
