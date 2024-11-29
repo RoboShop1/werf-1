@@ -9,4 +9,5 @@ git:
     to: /app/index.html
 shell:
   beforeInstall:
+    - apk add  git
     - mkdir /app
