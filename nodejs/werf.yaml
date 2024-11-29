@@ -7,10 +7,10 @@ from: alpine
 final: false
 git:
   - url: https://github.com/raghudevopsb81/roboshop-catalogue.git
-    branch: main
     commit: ecbf75ee9cace7d52f07c7792f8f4e11460d903c
     add: /
     to: /app
+
 shell:
   beforeInstall:
     - mkdir /app
