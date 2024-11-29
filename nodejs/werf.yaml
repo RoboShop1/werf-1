@@ -12,10 +12,10 @@ git:
     to: /app
 
 shell:
-  beforeInstall:
+  install:
     - mkdir /app
     - apk update && apk add --no-cache curl unzip nodejs npm
-    - cd /app
+    - cd /app/
     - npm install
 
 ---
