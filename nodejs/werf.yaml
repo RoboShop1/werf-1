@@ -15,7 +15,7 @@ shell:
   beforeInstall:
     - mkdir /app
     - apk update && apk add --no-cache curl unzip nodejs npm
-    - cd /app && unzip /tmp/catalogue.zip
+    - cd /app
     - npm install
 
 ---
