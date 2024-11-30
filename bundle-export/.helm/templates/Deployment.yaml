@@ -13,3 +13,4 @@ spec:
     spec:
       containers:
         - image: {{ $.Values.werf.image.nginx }}
+          name: nginx
