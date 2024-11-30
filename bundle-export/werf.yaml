@@ -1,0 +1,5 @@
+project: mybundle
+configVersion: 1
+---
+image: nginx
+dockerfile: Dockerfile
