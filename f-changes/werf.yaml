@@ -9,7 +9,7 @@ git:
     to: /app/docs
     stageDependencies:
       install:
-        - /app/docs
+        - /docs
 shell:
   beforeInstall:
     - mkdir /app
