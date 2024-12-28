@@ -1,0 +1,13 @@
+project: example
+configVersion: 1
+---
+image: ci
+from: docker.io/node:20-slim
+git:
+  - url: https://github.com/roboshop-devops-project-v3/catalogue.git
+    add: /
+    to: /app
+shell:
+  install:
+    - cd /app
+    - npm install
