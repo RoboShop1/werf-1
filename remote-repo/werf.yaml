@@ -1,24 +1,24 @@
-#project: example
-#configVersion: 1
-#---
-#image: ci
-#from: docker.io/node:20-slim
-#git:
-#  - url: https://github.com/roboshop-devops-project-v3/catalogue.git
-#    branch: main
-#    commit: 96f9be5a6250d9c492517617f7ef062d305d225a
-#    add: /
-#    to: /app
-#shell:
-#  install:
-#    - cd /app
-#    - npm install
-
-
 project: example
 configVersion: 1
-
-
 ---
-image: backend
-dockerfile: Dockerfile
+image: ci
+from: docker.io/node:20-slim
+git:
+  - url: https://github.com/roboshop-devops-project-v3/catalogue.git
+    branch: main
+    commit: 96f9be5a6250d9c492517617f7ef062d305d225a
+    add: /
+    to: /app
+shell:
+  install:
+    - cd /app
+    - npm install
+
+
+#project: example
+#configVersion: 1
+#
+#
+#---
+#image: backend
+#dockerfile: Dockerfile
