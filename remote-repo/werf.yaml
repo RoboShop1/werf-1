@@ -17,6 +17,9 @@
 
 project: example
 configVersion: 1
+
+build:
+  platform: ['linux/arm64']
 ---
 image: backend
 dockerfile: Dockerfile
